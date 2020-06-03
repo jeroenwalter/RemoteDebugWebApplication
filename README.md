@@ -21,6 +21,7 @@ The project has 2 profiles: "IISExpress" and "RemoteDebugWebApplication".
 
 ## "RemoteDebugWebApplication" profile 
 When starting this profile, the project will be built and published to the local folder 'RemoteDebugWebApplication\bin\Debug\netcoreapp3.1\linux-arm\publish'
+
 NB: The publish step is configured for 'Framework dependent' rather than 'Self-contained', otherwise the entire framework should be copied to the Raspberry Pi.
 
 These files are then copied to the Raspberry Pi.
@@ -33,19 +34,20 @@ The magic that makes this all happen are the files:
 
 ## How to debug
 You must  start the debugging process by attaching to the project's process on the Raspeberry Pi.
-Choose 'Debug' -> 'Attach to process'
-Connection type: 'SSH'
-Connection target: username@ip address of the Raspberry Pi, e.g. pi@192.168.2.17
+- Choose 'Debug' -> 'Attach to process'
+- Connection type: 'SSH'
+- Connection target: username@ip address of the Raspberry Pi, e.g. pi@192.168.2.17
 
 ![Attach to Process](./Attach-to-process.png "Attach to process")
 
 When you stop debugging in VS2019, the process remains running on the Raspberry Pi.
+
 You may kill it on the Raspberry Pi, but also the "RemoteDebugWebApplication" profile will try to kill it before uploading a new version.
 
 
 ## Alternatives
 This VS2019 extension seems to work okay:
-https://marketplace.visualstudio.com/items?itemName=radutomy.VSRemoteDebugger
+- https://marketplace.visualstudio.com/items?itemName=radutomy.VSRemoteDebugger
 
 
 

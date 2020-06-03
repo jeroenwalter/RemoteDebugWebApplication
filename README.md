@@ -37,7 +37,7 @@ Choose 'Debug' -> 'Attach to process'
 Connection type: 'SSH'
 Connection target: username@ip address of the Raspberry Pi, e.g. pi@192.168.2.17
 
-![Attach to Process](Attach to process.png)
+![Attach to Process](./Attach-to-process.png "Attach to process")
 
 When you stop debugging in VS2019, the process remains running on the Raspberry Pi.
 You may kill it on the Raspberry Pi, but also the "RemoteDebugWebApplication" profile will try to kill it before uploading a new version.

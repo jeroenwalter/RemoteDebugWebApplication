@@ -12,7 +12,16 @@ How-to: https://edi.wang/post/2019/9/29/setup-net-core-30-runtime-and-sdk-on-ras
 ### Passwordless SSH
 It is assumed that you have previously setup SSH and the Raspberry Pi for passwordless connection.
 See https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md 
+
 or https://blogs.endjin.com/2019/09/passwordless-ssh-from-windows-10-to-raspberry-pi/
+
+### Visual Studio Remote Debugging tools
+You need to install the remote debugging tools on the Raspberry Pi.
+
+See https://www.hanselman.com/blog/RemoteDebuggingWithVSCodeOnWindowsToARaspberryPiUsingNETCoreOnARM.aspx
+
+I've set it up so it starts when the Raspberry Pi boots. I don't remember how I did that though.....
+
 
 ## Profiles
 The project has 2 profiles: "IISExpress" and "RemoteDebugWebApplication".

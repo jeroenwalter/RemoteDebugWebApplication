@@ -43,7 +43,9 @@ When you stop debugging in VS2019, the process remains running on the Raspberry 
 You may kill it on the Raspberry Pi, but also the "RemoteDebugWebApplication" profile will try to kill it before uploading a new version.
 
 
-
+## Alternatives
+This VS2019 extension seems to work okay:
+https://marketplace.visualstudio.com/items?itemName=radutomy.VSRemoteDebugger
 
 
 
